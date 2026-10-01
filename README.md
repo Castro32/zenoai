@@ -2,14 +2,14 @@
 
 # Zeno
 
-Zeno is a Kenya-first marketplace concept for legitimate AI-related digital task work. This starter implementation includes a public product page, built-in Agent-Native authentication, a Drizzle-backed task catalog, and a protected marketplace view. It does not yet process task submissions, earnings, M-Pesa payments, or withdrawals.
+Zeno is a Kenya-first marketplace concept for legitimate AI-related digital task work. This implementation includes a public product page, built-in Agent-Native authentication, a Drizzle-backed task catalog, a protected client dashboard, and Premium and earnings pages. It does not yet process task submissions, earnings, M-Pesa payments, or withdrawals.
 
 ## Architecture
 
 - React 19, React Router framework mode, TypeScript, Vite, Tailwind CSS, and Agent-Native Toolkit.
 - Server-side Nitro runtime with validated `defineAction` operations as the shared UI/agent data path.
 - Drizzle ORM with PostgreSQL-compatible schema helpers. Local development uses PGlite; production requires a persistent PostgreSQL database.
-- Authentication is provided by the existing Agent-Native auth plugin; the marketing route is public and `/dashboard` is gated.
+- Authentication is provided by the existing Agent-Native auth plugin; the marketing route is public and `/dashboard` plus its earnings and Premium routes are gated.
 - `drizzle/schema.ts` defines the task catalog, `server/db.ts` configures the database and creator identity policy, and `actions/list-marketplace-tasks.ts` returns only published non-demo tasks with slots remaining.
 
 MongoDB/Mongoose is not supported by this Agent-Native starter's managed data path. Do not add a parallel MongoDB store; use the framework's SQL/Drizzle contract for application data.
@@ -43,7 +43,7 @@ The tasks table has a unique slug index and indexes for marketplace status/categ
 
 Authentication is enabled for protected routes via the built-in plugin. In local development, the framework can provide a local development sign-in. Production deployments need the framework's supported authentication secret and a persistent identity/session store. Keep secrets in deployment configuration, not source control.
 
-Task list input currently accepts no arbitrary filters; its query uses explicit status, demo, and slot predicates. Any future search/filter action must validate and whitelist every filter and sort field. Admin writes, task assignments, review, ledger, wallet, KYC, payment, and withdrawal workflows still need to be implemented before handling real users or funds.
+Task list input currently accepts no arbitrary filters; its query uses explicit status, demo, and slot predicates. Any future search/filter action must validate and whitelist every filter and sort field. Dashboard balance and payment pages are intentionally non-operational until payment, review, and ledger workflows are implemented; Premium checkout and withdrawals are visibly disabled rather than simulated.
 
 ## External services
 

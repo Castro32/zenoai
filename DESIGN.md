@@ -43,7 +43,7 @@ part of that build, not leave them as an empty template.
 - Visual world (name + the feeling it creates): Grounded opportunity — calm, candid, and locally relevant without promising outcomes.
 - Palette family + neutral undertone: Pine and teal accents on cool, clean green-tinted neutrals.
 - Type treatment: Sans-first with compact, high-contrast display headlines and restrained supporting copy.
-- Composition: Editorial public landing page leading into a focused marketplace list.
+- Composition: Editorial public landing page leading into an authenticated dashboard, with focused task, earnings, and payment routes.
 - Shape language: Rounded task surfaces balanced with crisp dividers and a restrained circular Zeno motif.
 - Anti-references (defaults this app must not drift toward): Generic violet AI gradients, invented earnings metrics, testimonial walls, decorative dashboards, or claims that sign-up or Premium guarantees work.
 
@@ -60,7 +60,7 @@ Surface And Page Boundaries so the surfaces are wired correctly.
 ## Guardrails
 
 - Keep semantic token names and shared component seams intact; express the
-  direction through token *values*, type, spacing, and composition — not by
+  direction through token _values_, type, spacing, and composition — not by
   forking the design system.
 - Density comes from data, not prose. Subtract explanatory chrome; never
   subtract the visual craft that makes the app impressive.
