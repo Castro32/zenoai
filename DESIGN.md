@@ -38,14 +38,14 @@ visual direction — read and preserve them on every subsequent build; do not
 re-derive a new direction. The first UI pass must fill these fields in as
 part of that build, not leave them as an empty template.
 
-- Product mode: `operate` | `read` | `persuade` | `experience`
-- Audience and cadence:
-- Visual world (name + the feeling it creates):
-- Palette family + neutral undertone:
-- Type treatment:
-- Composition:
-- Shape language:
-- Anti-references (defaults this app must not drift toward):
+- Product mode: `persuade` for public entry; `operate` for the authenticated marketplace.
+- Audience and cadence: Kenyan students, freelancers, and digital workers checking opportunities on Android phones, often in short sessions.
+- Visual world (name + the feeling it creates): Grounded opportunity — calm, candid, and locally relevant without promising outcomes.
+- Palette family + neutral undertone: Pine and teal accents on cool, clean green-tinted neutrals.
+- Type treatment: Sans-first with compact, high-contrast display headlines and restrained supporting copy.
+- Composition: Editorial public landing page leading into a focused marketplace list.
+- Shape language: Rounded task surfaces balanced with crisp dividers and a restrained circular Zeno motif.
+- Anti-references (defaults this app must not drift toward): Generic violet AI gradients, invented earnings metrics, testimonial walls, decorative dashboards, or claims that sign-up or Premium guarantees work.
 
 ## Agent-native is structural, not visual
 
